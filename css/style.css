@@ -1,0 +1,373 @@
+/*-----------------
+{Master StyleSheet}
+Wesite : Galaxy-Modern and Responsive Portfolio .
+Author : Wami Hycenth
+Website : https://cars.com
+Default color : white
+Text Color : White
+Version : 1.0
+Body Font : 'Poppins', sans-serif, 16 px
+-------------------*/
+
+
+/*-----------------
+General Style
+-------------------*/
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+/*-----------------
+Pre loader
+-------------------*/
+.pre_loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0px;
+    top: 0px;
+    z-index: 100; 
+}
+
+#hero {
+    height: 100%;
+    width: auto;
+}
+
+#hero .hero_outer-wrapper {
+    position: absolute;
+    height: 100%;
+    display: table;
+}
+
+#hero .hero_inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#hero h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin:16px 0px 70px 0px;
+    line-height: 80px;
+    color: white;
+}
+
+.hero_title {
+    position: relative;
+    color: rgba(255,255,255,0)
+}
+
+.hero_title{
+    color: white;
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s;
+}
+
+#hero h1 a.reveal {
+    color: yellow;
+}
+
+.hero_title:before {
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    content: "";
+} 
+
+@-webkit-keyframes animation-h1-bg-reveal-cover {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    
+    100% {
+        left: 0;
+        width: 100%;
+        
+    }
+} 
+
+@keyframes animation-h1-bg-reveal-cover {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    
+    100% {
+        left: 0;
+        width: 100%;
+        
+    }
+}
+
+.hero_title.reveal:before {
+    -webkit-animation: animation-h1-bg-reveal-cover .5s ease-out .3 forwards, animation-h1-bg-reveal-uncover 1s ease-out 1.4s forwards;
+    animation: animation-h1-bg-reveal-cover .5s ease-out .3 forwards, animation-h1-bg-reveal-uncover 1s ease-out 1.4s forwards;
+}
+
+@-webkit-keyframes animation-h1-bg-reveal-uncover {
+    0% {
+        width: 100%;
+    }
+    
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes animation-h1-bg-reveal-uncover {
+    0% {
+        width: 100%;
+    }
+    
+    100% {
+        width: 0;
+    }
+}
+
+#hero h1 a:before {
+    background-color: yellow;
+}
+
+.hero_link {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.hero_link figure {
+    position: relative;
+    color: white;
+    background-color: rgba(255,255,255,.3);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 15px
+}
+
+.hero_link figure i {
+    font-size:30px;
+    font-weight: 900;
+    position: relative;
+    margin-left: -3px;
+}
+
+.hero_link:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+#carousel {
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: brightness(.6);
+    filter: brightness(.6);
+}
+
+#carousel img{
+    height: 100%;
+    width: auto;
+}
+
+/*-----------------
+    Hero Navigatio Bar
+-------------------*/
+
+.navbar {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 50px 10px 100px;
+    text-transform: uppercase;
+}
+.bg{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    opacity: .65;
+}
+
+.gallery{
+    position: relative;
+}
+
+.nav-bg-black {
+    background-color: rgba(0,0,0,.8);
+}
+
+.gallery_caption {
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+    padding: 130px 65px;
+    z-index: 2;
+}
+.gallery h5{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    opacity: .8;
+}
+.gallery h3{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.portfolio_image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.portfolio_image img {
+    display: block;
+    height: 100%;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+.gallery a:hover .portfolio_image img {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+    -webkit-filter: brightness(.6);
+    filter: brightness(.6);
+}
+
+#btn-load-more {
+    margin-top: 50px;
+    background-color: black;
+    padding: 10px 20px;
+    border-color: black;
+}
+
+/*-----------------
+About Us
+-------------------*/
+#about us p {
+    opacity: .6;
+    
+}
+#btn-contact-us {
+    background-color: white;
+    border-color: white;
+    color: black;
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    margin: 20px 0px 10px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#about-us img {
+    width: 100%;
+}
+
+/*-----------------
+Our Team
+-------------------*/
+#our-team{
+    background-color: rgba(0,0,0,.04);
+}
+
+.member h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 10px;
+    
+}
+.member h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.member_image_wrapper {
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.social_media {
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    width: 250px;
+    height: 230px;
+    line-height: 380px;
+    -webkit-transform: translateY(85%);
+    transform: translateY(85%);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    border-radius: 50%;
+}
+.member:hover .social_media {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.social_media i {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.social_media i:hover {
+    color: yellow;
+}
+
+/*-----------------
+Contact Us
+-------------------*/
+
+#contact-us {
+    color: white;
+    background-color: black;
+}
+
+#contact-us a {
+    color: white;
+}
+
+#contact-us a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+#contact-us address {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 30px;
+        
+}
+
+/*-----------------
+Footer
+-------------------*/
+
+footer {
+    margin: 10px 0px;
+}
